@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity" >
+    
+    <TextView android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quiz_title"
+        android:layout_marginBottom="10dp"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/text_colour"
+        android:gravity="center"
+    />
+    
+    <TextView android:id="@+id/questionNumberTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/text_colour"
+        android:layout_gravity="center"
+        android:gravity="center"
+    />
+    
+    <ImageView android:id="@+id/crestImageView"
+        android:adjustViewBounds="false"
+        android:layout_width="@dimen/crest_width"
+        android:layout_height="@dimen/crest_height"
+        android:contentDescription="@string/crestContentDesc"
+    />
+    
+    <TextView android:id="@+id/guessClubTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/guess_club"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/text_colour"
+    />
+    
+    <TableLayout android:id="@+id/buttonTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:stretchColumns="0,1,2">
+        
+        <TableRow android:id="@+id/tableRow0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </TableRow>
+        
+        <TableRow android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </TableRow>
+        
+        <TableRow android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </TableRow>
+        
+    </TableLayout>
+
+    <TextView android:id="@+id/answerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/answer_size"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:gravity="center"
+    />
+    
+</LinearLayout>
